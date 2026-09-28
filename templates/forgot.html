@@ -1,0 +1,2 @@
+{% extends "base.html" %}{% block title %}Forgot Password{% endblock %}{% block content %}
+<div class="auth"><div class="auth-card"><span class="eyebrow">ACCOUNT RECOVERY</span><h1>Forgot Password?</h1><p>Enter your registered email or mobile number.</p><form method="post" class="form"><input name="identifier" required><button class="primary big">Continue</button></form><a href="{{url_for('login')}}">Back to Login</a></div></div>{% endblock %}

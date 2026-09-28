@@ -1,0 +1,5 @@
+{% extends "base.html" %}{% block title %}Login{% endblock %}{% block content %}
+<div class="auth"><div class="auth-card"><div class="logo">⏰</div><span class="eyebrow">QUICK REMINDER</span><h1>Welcome back</h1><p>Login to manage your family details and documents.</p>
+<form method="post" class="form"><label>Email or Mobile<input name="identifier" required autofocus placeholder="you@example.com or 9876543210"></label><label>Password<input type="password" name="password" required></label><button class="primary big">Login</button></form>
+<div class="links"><a href="{{url_for('forgot_password')}}">Forgot Password?</a><span>·</span><a href="{{url_for('register')}}">Create Account</a></div>
+<a class="admin-link" href="{{url_for('admin_login')}}">Administrator Login</a></div></div>{% endblock %}
